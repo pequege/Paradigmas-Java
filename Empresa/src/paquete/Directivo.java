@@ -1,33 +1,27 @@
 package paquete;
 public class Directivo extends Empleado{
-    private boolean categoria;
-
-    /**
-     *
-     * @param nombre
-     * @param edad
-     * @param sueldo_bruto
-     * @param categoria
-     */
-    public Directivo(String nombre, int edad, float sueldo_bruto, boolean categoria) {
-        super(nombre, edad, sueldo_bruto);
-    }
+    private int categoria;
     
-    public boolean getCategoria(){
+    //Getter & Setter de Directivo
+    public int getCategoria(){
         return categoria;
     }
-    public void setCategoria(boolean categoria){
+    public void setCategoria(int categoria){
         this.categoria = categoria;
     }
     
-    //cambiar mostrar---
-    public void mostrarCategoria(){
-        if(categoria == true){
-            System.out.println("Directivo");
-        }
-        else{
-            System.out.println("Subordinado");
-        }
+    //Constructor de Directivo
+    public Directivo(String nombre, int edad, float sueldo_bruto, int categoria) {
+        super(nombre, edad, sueldo_bruto);
+        this.categoria = categoria;
+    }
+    
+    //Funcion Mostrar
+    public void mostrarDirectivo(){
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Edad: " + getEdad());
+        System.out.println("Sueldo: " + getSueldo_bruto());
+        System.out.println("Categoria: " + getCategoria());
     }
     
 }

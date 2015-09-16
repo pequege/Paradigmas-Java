@@ -21,10 +21,11 @@ public class Empleado extends Persona{
         System.out.println("Nombre: " + getNombre());
         System.out.println("Edad: " + getEdad());
         System.out.println("Sueldo bruto: $" + getSueldo_bruto());
+        System.out.println("Salario neto: $" + calcular_salario_neto());
     }
     //Funcion calcular_salario_neto
-    public void calcular_salario_neto(){
-        float sn = sueldo_bruto - (sueldo_bruto * 21 / 100);
-        System.out.println("Salario neto: $" + sn);
+    public float calcular_salario_neto(){
+        float sn = sueldo_bruto - (sueldo_bruto * 3 / 100) - (sueldo_bruto * 11 / 100);
+        return sn;
     }
 }
