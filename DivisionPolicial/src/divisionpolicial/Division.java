@@ -34,6 +34,19 @@ public class Division {
         return "Division{" + "DeIntervencion=" + DeIntervencion + ", DeTransito=" + DeTransito + '}';
     }
     
+    public static void rankingDeIntervencion(ArrayList DeIntervencion){
+        int i, j, k, aux;
+        for ( i = 0; i <= DeIntervencion.size(); i++){
+            for ( j = 0; j <= DeIntervencion.size(); j++){
+                System.out.println("Culiao: " + DeIntervencion.get(j));
+            }
+        }
+    }
+    
+    public static void rankingDeTransito(ArrayList DeTransito){
+        //asd
+    }
+    
     /*public static void burbuja(int vector[]) {
     int i, j, k, aux;
     for ( i=0; i < vector.length - 1; i++){
