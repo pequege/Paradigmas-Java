@@ -1,4 +1,3 @@
-
 package campeonato1;
 
 import java.util.ArrayList;
@@ -21,7 +20,5 @@ public class Equipo {
             }
             j.mostrar();
         }
-        
-        
     }
 }

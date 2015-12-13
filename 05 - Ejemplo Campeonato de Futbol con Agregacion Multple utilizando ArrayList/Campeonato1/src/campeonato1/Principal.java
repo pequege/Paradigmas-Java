@@ -1,7 +1,5 @@
 package campeonato1;
 
-import java.util.Random;
-
 public class Principal {
     public static void main(String[] args) {
         Jugador j1 = new Jugador(10,"Tevez");
